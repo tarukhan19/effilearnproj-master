@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.HomePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/bg"
+        >
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/dimen_50dp"-->
+<!--            android:layout_height="@dimen/dimen_60dp"-->
+<!--            android:src="@drawable/ic_back"-->
+<!--            android:layout_margin="@dimen/dimen_8dp"-->
+
+<!--            />-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="@dimen/dimen_5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradientcurvelayout"
+                        android:weightSum="1"
+                        >
+
+                        <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:text="Course"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_25sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/courses"
+
+                            />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mocktestCV"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="@dimen/dimen_5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradientcurvelayout"
+                        android:weightSum="1"
+                        >
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/mocktests"
+
+                            />
+                        <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:text="Mock Tests"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_25sp"
+                            />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/callscheduleCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/dimen_8dp"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="@dimen/dimen_5dp"
+                    >
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/gradientcurvelayout"
+                        android:weightSum="1"
+                        >
+                        <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:text="Call Schedule"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_25sp"
+                            />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/callschedules"
+
+                            />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

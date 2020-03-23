@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "149928190816",
+    "firebase_url": "https://effi-learn.firebaseio.com",
+    "project_id": "effi-learn",
+    "storage_bucket": "effi-learn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149928190816:android:7af52cee795da3a3f63405",
+        "android_client_info": {
+          "package_name": "com.effseele.effilearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149928190816-1bbvrl7psg6knhpfu8v2io7mk3eoebf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.effseele.effilearn",
+            "certificate_hash": "c271fee7fe57550b5ea20e12fd7b2477820492b6"
+          }
+        },
+        {
+          "client_id": "149928190816-0gvfttoh2n8ft8eck86kc0do52dm7g4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqXMMd__6ECdVGRQlevYk0Y4evJO-jWi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149928190816-0gvfttoh2n8ft8eck86kc0do52dm7g4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

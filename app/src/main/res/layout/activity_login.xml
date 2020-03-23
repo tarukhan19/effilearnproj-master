@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/bg"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/login_bg"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/appiconwithtext"
+                        />
+
+                    <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:gravity="center"
+                        android:text="Login"
+                        android:textColor="@color/darkpink"
+
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/cuvelinearlayout"
+                    android:elevation="10dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/mobileWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.TextViewAirenregular
+                                android:id="@+id/mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Mobile No"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/gray"/>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/passWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/passwordET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Password"
+                                android:background="@null"
+                                android:paddingLeft="15dp"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:singleLine="true"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                               />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <com.effseele.effilearn.cusFnt.ButtonAirenRegular
+                        android:id="@+id/signup"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="Log In"
+                        android:background="@drawable/button"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="15dp"
+                        />
+
+
+
+                </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+
+         </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

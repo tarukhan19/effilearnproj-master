@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+    <com.effseele.effilearn.cusFnt.TextViewBoldFont
+        android:id="@+id/statusTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:textColor="@color/darkpink"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/goBtn"
+        android:layout_width="180dp"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@drawable/button"
+        android:text="Go to Home Page"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+        />
+
+
+</LinearLayout>

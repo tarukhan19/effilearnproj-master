@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffcbef</color>
+    <color name="colorPrimaryDark">#ffcbef</color>
+    <color name="colorAccent">#A60087</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#888888</color>
+    <color name="appgrey">#E5E5E5</color>
+    <color name="light_black">#555454</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1C123D</color>
+    <color name="red">#DB4438</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="appiconcolor">#003E5F</color>
+    <color name="lite_grey">#F0F0F0</color>
+    <color name="dimgrey">#696969</color>
+    <color name="semi_trans">#4D000000</color>
+    <color name="orange">#F47902</color>
+    <color name="grey">#DDDDDD</color>
+    <color name="darkpink">#A60087</color>
+
+
+
+</resources>

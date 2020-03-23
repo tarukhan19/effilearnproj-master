@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@mipmap/bg"
+        android:focusableInTouchMode="true"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/login_bg"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/appiconwithtext" />
+
+
+                    <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:gravity="center"
+                        android:text="Sign Up"
+                        android:textColor="@color/darkpink"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/cuvelinearlayout"
+                    android:elevation="10dp"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/nameWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/nameET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Name"
+                                android:background="@null"
+                                android:inputType="text|textCapSentences"
+                                android:paddingLeft="15dp"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColorHint="@color/gray"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/emailWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/emailET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Enter Email"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/mobileWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.TextViewAirenregular
+                                android:id="@+id/mobileET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Mobile No"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:gravity="center_vertical"
+
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/gray"/>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/stateLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/stateWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.9"
+                            android:paddingLeft="15dp"
+
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.TextViewAirenregular
+                                android:id="@+id/stateTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="State"
+                                android:gravity="center_vertical"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@mipmap/ic_dropdown"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/districtLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/districtWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.9"
+                            android:paddingLeft="15dp"
+
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.TextViewAirenregular
+                                android:id="@+id/districtTV"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="District"
+                                android:gravity="center_vertical"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@mipmap/ic_dropdown"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/addressWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/addressET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Address"
+                                android:background="@null"
+                                android:inputType="textCapSentences"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:paddingLeft="15dp"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cityWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/cityET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="City"
+                                android:background="@null"
+                                android:inputType="textCapSentences"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:paddingLeft="15dp"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/pincodeWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/pincodeET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Pin code"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:paddingLeft="15dp"
+                                android:maxLength="6"
+                                android:maxLines="1"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/passwordWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/passwordET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Password"
+                                android:background="@null"
+                                android:maxLines="1"
+                                android:paddingLeft="15dp"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:weightSum="1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/cPassWrapper"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.9"
+                            android:textColorHint="@color/gray">
+
+                            <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                                android:id="@+id/confirmPasswordET"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Confirm Password"
+                                android:background="@null"
+                                android:paddingLeft="15dp"
+                                android:textColorHint="@color/gray"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"
+                            />
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            >
+
+
+                            <RadioButton
+                                android:id="@+id/maleRB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:checked="true"
+                                />
+                            <RadioButton
+                                android:id="@+id/femaleRB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="14sp"
+                                android:gravity="center"
+
+                                />
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="8dp"
+                        android:weightSum="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            >
+
+                            <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pan Card"
+                                android:layout_gravity="center"
+                                android:textColor="@color/black"
+                                />
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                app:riv_border_color="@color/darkpink"
+                                app:riv_border_width="0.5dp"
+                                app:riv_corner_radius="2dip"
+                                android:id="@+id/pancardcompanyIV"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_upload" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/pancardTIL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColorHint="@color/gray" />
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0.5"
+                            >
+
+                            <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Adhaar Card"
+                                android:layout_gravity="center"
+                                android:textColor="@color/black"
+                                />
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                app:riv_border_color="@color/darkpink"
+                                app:riv_border_width="0.5dp"
+                                app:riv_corner_radius="2dip"
+                                android:id="@+id/adharcardcompanyIV"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_upload" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/adharcardTIL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textColorHint="@color/gray" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <com.effseele.effilearn.cusFnt.ButtonAirenRegular
+                        android:id="@+id/signup"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="Sign Up"
+                        android:background="@drawable/button"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="15dp"
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

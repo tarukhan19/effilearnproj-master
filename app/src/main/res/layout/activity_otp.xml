@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAuth.OtpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/login_bg"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/appiconwithtext"
+                    />
+
+
+                <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:text="OTP Verification"
+                    android:textColor="@color/darkpink"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cuvelinearlayout"
+                android:orientation="vertical"
+
+                android:layout_marginTop="-40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="OTP has been sent to your Registered mobile number."/>
+
+                <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Please enter it below"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/otpWrapper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:layout_weight="1"
+                        android:textColorHint="@color/gray">
+
+                        <com.effseele.effilearn.cusFnt.EditTextAirenRegular
+                            android:id="@+id/otp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="OTP Verification Number"
+                            android:background="@null"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingLeft="15dp"
+                            android:textSize="15sp"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:layout_margin="20dp"
+                    >
+
+                    <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                        android:id="@+id/dontrecieveotp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't Received OTP?"
+                        android:textColor="@color/darkpink"
+                        android:layout_weight="0.5"
+                        android:textSize="12sp"
+                        />
+
+                    <com.effseele.effilearn.cusFnt.ButtonAirenRegular
+                        android:id="@+id/verifyotp"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="Verified OTP"
+                        android:textAllCaps="false"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button"
+                        android:textColor="@color/white"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

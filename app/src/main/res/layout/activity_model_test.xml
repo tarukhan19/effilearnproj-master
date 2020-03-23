@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ModelTestActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+
+                <com.effseele.effilearn.cusFnt.TextViewBoldFont
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAlignment="center"
+                    android:padding="6dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/answerRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_below="@id/tv_question"
+                    />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            >
+
+            <com.effseele.effilearn.cusFnt.ButtonAirenRegular
+                android:id="@+id/previousBTN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Previous"
+                android:padding="@dimen/dimen_8dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:visibility="invisible"
+
+                android:background="@drawable/lightbutton"
+                />
+
+            <com.effseele.effilearn.cusFnt.ButtonAirenRegular
+                android:id="@+id/nextBTN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Next"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:padding="@dimen/dimen_8dp"
+                android:visibility="invisible"
+                android:background="@drawable/lightbutton"
+                />
+
+            <com.effseele.effilearn.cusFnt.ButtonAirenRegular
+                android:id="@+id/submitBTN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Submit"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:padding="@dimen/dimen_8dp"
+                android:background="@drawable/lightbutton"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
